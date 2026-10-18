@@ -95,3 +95,17 @@ button{font:inherit}
 .form-hint{font-size:.74rem;color:var(--soft);margin-top:13px;overflow-wrap:anywhere}
 .form-hint a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.form-grid{grid-template-columns:1fr;gap:0}.hero h1{font-size:clamp(2.9rem,11.7vw,4.3rem);letter-spacing:-.075em}.contact-form{padding:20px 16px}}
+
+
+/* PhytoDetect project preview follows the same dashboard frame as PAT and employee management */
+.phyto-window{transform:rotate(-.7deg)}
+.phyto-content{padding:15px;min-height:245px}
+.phyto-title{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.phyto-title>div{display:grid}.phyto-title small{font:.43rem var(--mono);color:#99a8ba;letter-spacing:.06em}.phyto-title strong{font-size:.75rem;color:#edf3f7}
+.phyto-pill{font:.43rem var(--mono);color:#b6ed87;border:1px solid rgba(169,240,107,.28);border-radius:4px;padding:5px 6px;white-space:nowrap}
+.phyto-upload{display:flex;align-items:center;flex-direction:column;justify-content:center;gap:4px;min-height:100px;margin-top:13px;border:1px dashed rgba(169,240,107,.3);border-radius:7px;background:rgba(169,240,107,.035);color:var(--accent)}
+.phyto-upload>i{font-size:1.25rem}.phyto-upload span{font-size:.68rem;color:#dbe5d7}.phyto-upload small{font:.43rem var(--mono);color:#8f9eac}
+.phyto-result{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px;padding:11px;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.025);border-radius:6px}
+.phyto-result>div:first-child{display:grid;gap:3px;min-width:0}.phyto-result small{font:.42rem var(--mono);color:#94a1b3}.phyto-result strong{font-size:.65rem;color:#edf3f7}.phyto-result span{font-size:.49rem;color:#8f9daf}.phyto-score{display:grid;text-align:right;flex-shrink:0}.phyto-score b{font-size:1.2rem;color:var(--accent);line-height:1.35}.phyto-score small{font-size:.38rem}
+.phyto-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.phyto-tags span{font:.4rem var(--mono);color:#b8c4d3;border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:5px 6px}
+@media(max-width:650px){.phyto-content{padding:11px;min-height:215px}.phyto-result{padding:8px}.phyto-result strong{font-size:.58rem}}
