@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {\n  document.documentElemen
 
 
   // Submit the contact form through FormSubmit and show clear delivery feedback.
+  // Use the contact endpoint that worked on the previous portfolio.
   const contactForm = document.getElementById("contact-message");
   const contactStatus = document.getElementById("contact-status");
   const contactButton = contactForm?.querySelector('button[type="submit"]');
@@ -74,30 +75,26 @@ document.addEventListener("DOMContentLoaded", () => {\n  document.documentElemen
     contactForm.addEventListener("submit", async event => {
       event.preventDefault();
       if (!contactForm.reportValidity()) return;
-      const payload = Object.fromEntries(new FormData(contactForm).entries());
-      payload._subject = payload.subject || "Portfolio contact message";
-      payload._template = "table";
-      payload._captcha = "false";
-      payload._replyto = payload.email || "";
+      const formData = new FormData(contactForm);
+      if (contactStatus) contactStatus.textContent = "Sending your message…";
       if (contactButton) {
         contactButton.disabled = true;
         contactButton.setAttribute("aria-busy", "true");
       }
-      if (contactStatus) contactStatus.textContent = "Sending your message…";
       try {
-        const response = await fetch("https://formsubmit.co/ajax/gagangowdabg08@gmail.com", {
+        const response = await fetch("https://formspree.io/f/mgvlgzoe", {
           method: "POST",
-          headers: { "Content-Type": "application/json", "Accept": "application/json" },
-          body: JSON.stringify(payload)
+          body: formData,
+          headers: { "Accept": "application/json" }
         });
         const result = await response.json();
-        if (!response.ok || result.success === false || result.success === "false") {
-          throw new Error(result.message || "Message submission failed");
+        if (!response.ok || result.errors) {
+          throw new Error(result.errors?.map(item => item.message).join(", ") || "Message submission failed");
         }
         contactForm.reset();
-        if (contactStatus) contactStatus.textContent = "Thanks! Your message was submitted. If this is your first submission, confirm the activation email from FormSubmit to enable delivery.";
+        if (contactStatus) contactStatus.textContent = "Thanks! Your message has been sent successfully.";
       } catch (error) {
-        if (contactStatus) contactStatus.textContent = "We couldn't send your message. Please email gagangowdabg08@gmail.com directly or try again.";
+        if (contactStatus) contactStatus.textContent = "Sorry, your message could not be sent. Please email gagangowdabg08@gmail.com directly or try again.";
       } finally {
         if (contactButton) {
           contactButton.disabled = false;
