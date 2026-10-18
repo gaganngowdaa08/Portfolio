@@ -65,6 +65,25 @@ document.addEventListener("DOMContentLoaded", () => {\n  document.documentElemen
     sections.forEach(section => navObserver.observe(section));
   }
 
-  const year = document.getElementById("year");
+
+  // Contact form: use the visitor's configured email app without exposing credentials or storing messages.
+  const contactForm = document.getElementById("contact-message");
+  if (contactForm) {
+    contactForm.addEventListener("submit", event => {
+      event.preventDefault();
+      if (!contactForm.reportValidity()) return;
+      const formData = new FormData(contactForm);
+      const name = String(formData.get("name") || "").trim();
+      const email = String(formData.get("email") || "").trim();
+      const subject = String(formData.get("subject") || "").trim();
+      const message = String(formData.get("message") || "").trim();
+      const body = `Name: ${name}\nReply email: ${email}\n\n${message}`;
+      const mailto = "mailto:gagangowdabg08@gmail.com"
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+      window.location.href = mailto;
+    });
+  }
+\n  const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 });
