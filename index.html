@@ -1,243 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gagan Gowda | AI Engineer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b10">
+  <meta name="description" content="Gagan Gowda B G — software developer building practical web, backend, and AI-powered applications. Explore projects, skills, and contact details.">
+  <title>Gagan Gowda B G | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="glow-orb orb-1"></div>
-    <div class="glow-orb orb-2"></div>
-
-    <nav class="navbar">
-        <div class="logo">GAGAN GOWDA</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="btn-primary">Hire Me</a></li>
-        </ul>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Gagan Gowda home"><span class="brand-mark">G</span><span>gagan<span class="brand-muted">.dev</span></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a class="nav-contact" href="#contact">Let's connect <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
     </nav>
+  </header>
 
-    <header class="hero" id="about">
-        <div class="hero-content glass-card">
-            <div class="badge">Available for Internships</div>
-            <h1>Engineering <br> <span class="gradient-text">AI Solutions</span></h1>
-            <p>
-                Aspiring IT professional specializing in Cloud Computing, DevOps, and Full-Stack Development. 
-                Focusing on building scalable systems and solving complex problems with AI.
-            </p>
-            
-            <div class="hero-buttons">
-                <a href="resume.pdf" class="btn-outline" target="_blank"><i class="fas fa-cloud-download-alt"></i> My Resume</a>
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/gagan-gowda-1b63a22b4/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/gaganngowdaa08" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO SOFTWARE OPPORTUNITIES</div>
+        <p class="mono intro-line">HELLO, I'M</p>
+        <h1>Gagan Gowda <span class="accent">B G.</span></h1>
+        <h2>Software Developer <span class="slash">/</span> <span class="typing" aria-label="Java, backend, and AI projects">Java &amp; Backend</span></h2>
+        <p class="hero-description">I build useful software that connects clean interfaces, dependable backend logic, and practical problem-solving. I’m a 2026 Computer Science graduate who enjoys turning ideas into working applications.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-down"></i></a>
+          <a class="button button-quiet" href="resume.pdf" target="_blank" rel="noopener">View resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
-
-        <div class="profile-card glass-card">
-            <div class="image-wrapper-hero">
-                <img src="your-photo.jpg" alt="Gagan Gowda" class="profile-pic">
-            </div>
-            <div class="profile-info">
-                <h3>Gagan Gowda BG</h3>
-                <p><i class="fas fa-code"></i> Python & Java</p>
-            </div>
+        <div class="social-row">
+          <a href="https://github.com/gaganngowdaa08" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/gagan-gowda-1b63a22b4/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:gaganngowdaa08@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
         </div>
-    </header>
-
-    <div class="tech-stack">
-        <div class="scroller">
-            <span>PYTHON</span><span>JAVA</span><span>DOCKER</span><span>REACT JS</span>
-            <span>AWS</span><span>SQL</span><span>GIT</span><span>OPENCV</span><span>AIRFLOW</span>
-            <span>PYTHON</span><span>JAVA</span><span>DOCKER</span><span>REACT JS</span>
-            <span>AWS</span><span>SQL</span><span>GIT</span><span>OPENCV</span><span>AIRFLOW</span>
+      </div>
+      <aside class="hero-aside reveal">
+        <div class="portrait-frame">
+          <div class="portrait-top"><span>PROFILE / 2026</span><span class="portrait-live"><span class="status-dot"></span> AVAILABLE</span></div>
+          <img src="your-photo.jpg" alt="Portrait of Gagan Gowda" class="portrait">
+          <div class="portrait-caption"><div><strong>Gagan Gowda B G</strong><span>Computer Science Graduate</span></div><span class="caption-icon"><i class="fa-solid fa-code"></i></span></div>
         </div>
-    </div>
-
-    <section id="projects" class="projects-section">
-        <h2 class="section-title">Featured Projects</h2>
-        
-        <div class="projects-grid">
-            <div class="project-card glass-card">
-                <div class="card-header">
-                    <span class="tag">AI / Deep Learning</span>
-                    <i class="fas fa-leaf icon-glow"></i>
-                </div>
-                <h3>PhytoDetect AI</h3>
-                <p class="subtitle">Grape Leaf Disease Detection</p>
-                <p class="desc">Deep learning system using CNNs to analyze grape leaves. Features a multilingual NLP chatbot for farmer assistance.</p>
-                <div class="stack">
-                    <span>Python</span><span>TensorFlow</span><span>Flask</span>
-                </div>
-                <div class="links">
-                    <button class="btn-text" onclick="openModal('modal-phyto')">View Details <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-
-            <div class="project-card glass-card">
-                <div class="card-header">
-                    <span class="tag">DevOps / Data</span>
-                    <i class="fas fa-chart-line icon-glow"></i>
-                </div>
-                <h3>Stock Data Pipeline</h3>
-                <p class="subtitle">Dockerized ETL System</p>
-                <p class="desc">Containerized ETL pipeline using Apache Airflow to fetch Alpha Vantage data and store it in PostgreSQL.</p>
-                <div class="stack">
-                    <span>Docker</span><span>Airflow</span><span>PostgreSQL</span>
-                </div>
-                <div class="links">
-                    <button class="btn-text" onclick="openModal('modal-stock')">View Details <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-
-            <div class="project-card glass-card">
-                <div class="card-header">
-                    <span class="tag">IoT / Robotics</span>
-                    <i class="fas fa-robot icon-glow"></i>
-                </div>
-                <h3>Object Sorting System</h3>
-                <p class="subtitle">Automated Color Sorting</p>
-                <p class="desc">Integrated hardware and software using OpenCV and Arduino to sort objects based on color analysis.</p>
-                <div class="stack">
-                    <span>OpenCV</span><span>Arduino</span><span>Python</span>
-                </div>
-                <div class="links">
-                    <button class="btn-text" onclick="openModal('modal-sorting')">View Details <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
+        <div class="side-note"><span class="mono">CURRENT FOCUS</span><strong>Java · REST APIs · SQL</strong><span>Building, learning, improving.</span></div>
+      </aside>
+      <div class="hero-index mono">01 <span></span> SOFTWARE / PROJECTS / PEOPLE</div>
     </section>
 
-    <section class="timeline-section glass-card">
-        <h3>Education Journey</h3>
-        <div class="timeline">
-            <div class="t-item">
-                <span class="year">2026</span>
-                <h4>KS Institute of Technology</h4>
-                <p>B.E. Computer Science</p>
-                <small>Bengaluru, India</small>
-            </div>
-            <div class="t-item">
-                <span class="year">2022</span>
-                <h4>Sri Chaitanya PU College</h4>
-                <p>Pre-University</p>
-                <small>Bengaluru, India</small>
-            </div>
-            <div class="t-item">
-                <span class="year">2020</span>
-                <h4>Sri Chaitanya Techno School</h4>
-                <p>SSLC (10th Grade)</p>
-                <small>Bengaluru, India</small>
-            </div>
+    <section class="ticker" aria-label="Technologies"><div class="ticker-track"><span>JAVA</span><b>✳</b><span>SPRING BOOT</span><b>✳</b><span>REST API</span><b>✳</b><span>MYSQL</span><b>✳</b><span>PYTHON</span><b>✳</b><span>REACT</span><b>✳</b><span>GIT</span><b>✳</b><span>JAVA</span><b>✳</b><span>SPRING BOOT</span><b>✳</b><span>REST API</span><b>✳</b><span>MYSQL</span><b>✳</b><span>PYTHON</span><b>✳</b><span>REACT</span><b>✳</b><span>GIT</span><b>✳</b></div></section>
+
+    <section id="about" class="section wrap">
+      <div class="section-heading reveal"><p class="mono section-kicker">02 / A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span class="muted-heading">Builder by practice.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-copy reveal"><p class="lead">I like understanding how things work—and then building something useful with that knowledge.</p><p>My interests span Java development, database-backed applications, and AI-powered tools. Through academic and personal projects, I’ve worked across the development process: shaping features, connecting APIs, handling data, and making interfaces easier to use.</p><p>I’m now looking for an opportunity where I can contribute to a team, learn from experienced engineers, and grow through real product work.</p><a class="text-link" href="resume.pdf" target="_blank" rel="noopener">More about my journey <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="principles reveal">
+          <article class="principle"><span class="principle-number">01</span><div><h3>Build with purpose</h3><p>Focus on practical features and clear user needs.</p></div><i class="fa-solid fa-arrow-up-right-from-square"></i></article>
+          <article class="principle"><span class="principle-number">02</span><div><h3>Keep learning</h3><p>Strengthen fundamentals and learn by shipping projects.</p></div><i class="fa-solid fa-arrow-up-right-from-square"></i></article>
+          <article class="principle"><span class="principle-number">03</span><div><h3>Work collaboratively</h3><p>Value readable code, communication, and feedback.</p></div><i class="fa-solid fa-arrow-up-right-from-square"></i></article>
         </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <div class="contact-card glass-card">
-            <h3>Contact</h3>
-            <p>Gagan Gowda | gaganngowdaa08@gmail.com</p>
-            <form action="https://formspree.io/f/mgvlgzoe" method="POST">
-                <div class="form-group">
-                    <label>Your Name</label>
-                    <input type="text" name="name" placeholder="Enter name" required>
-                </div>
-                <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" name="email" placeholder="Enter email" required>
-                </div>
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea name="message" placeholder="Let’s connect — share your message." required></textarea>
-                </div>
-                <button type="submit" class="btn-primary full-width">Send Message</button>
-            </form>
+    <section id="projects" class="section projects-section">
+      <div class="wrap">
+        <div class="section-heading section-heading-row reveal"><div><p class="mono section-kicker">03 / SELECTED WORK</p><h2>Projects with a purpose.</h2></div><p class="section-sidecopy">A few things I’ve built, explored, and learned from.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-feature reveal">
+            <a class="project-image project-image-phyto" href="grapecare-ui.png" target="_blank" rel="noopener" aria-label="Open PhytoDetect interface screenshot"><img src="grapecare-ui.png" alt="PhytoDetect AI grape leaf disease detection interface" loading="lazy"><span class="image-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+            <div class="project-body"><div class="project-meta"><span>01 / AI &amp; COMPUTER VISION</span><span class="project-status">FEATURED</span></div><h3>PhytoDetect AI</h3><p class="project-subtitle">Grape Leaf Disease Detection</p><p>A deep-learning application that analyzes grape leaf images to help identify disease patterns, with a web interface for interacting with the model.</p><div class="chip-row"><span>Python</span><span>TensorFlow</span><span>CNN</span><span>Flask</span></div><div class="project-links"><a href="https://github.com/gaganngowdaa08/grapecare-v2" target="_blank" rel="noopener">Source code <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://huggingface.co/spaces/gagangowda08/grape" target="_blank" rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-image" href="airflow-dashboard%20(1).png" target="_blank" rel="noopener" aria-label="Open ETL dashboard screenshot"><img src="airflow-dashboard (1).png" alt="Stock data ETL pipeline dashboard" loading="lazy"><span class="image-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+            <div class="project-body"><div class="project-meta"><span>02 / DATA ENGINEERING</span></div><h3>Stock Data Pipeline</h3><p class="project-subtitle">Containerized ETL Workflow</p><p>A scheduled data pipeline designed to collect market data, orchestrate transformations, and store results for analysis.</p><div class="chip-row"><span>Python</span><span>Airflow</span><span>Docker</span><span>PostgreSQL</span></div><div class="project-links"><a href="https://github.com/gaganngowdaa08/docker-airflow-stock-pipeline" target="_blank" rel="noopener">Source code <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-image" href="img1.png" target="_blank" rel="noopener" aria-label="Open object sorting project photo"><img src="img1.png" alt="Automated color sorting project hardware" loading="lazy"><span class="image-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+            <div class="project-body"><div class="project-meta"><span>03 / AUTOMATION</span></div><h3>Object Sorting System</h3><p class="project-subtitle">Computer Vision &amp; Hardware</p><p>An object-sorting prototype combining image-based color detection with hardware control to automate a simple physical task.</p><div class="chip-row"><span>Python</span><span>OpenCV</span><span>Arduino</span></div><div class="project-links"><a href="https://github.com/gaganngowdaa08" target="_blank" rel="noopener">Explore GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+          </article>
         </div>
+        <p class="project-note mono">MORE CODE AND EXPERIMENTS ON <a href="https://github.com/gaganngowdaa08" target="_blank" rel="noopener">GITHUB <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+      </div>
     </section>
 
-    <div id="modal-phyto" class="modal-overlay">
-        <div class="modal-content glass-card">
-            <button class="close-btn" onclick="closeModal('modal-phyto')">&times;</button>
-            <div class="modal-grid">
-                <div class="modal-img-wrapper">
-                    <img src="grapecare-ui.png" alt="UI" class="modal-img">
-                    <img src="grapecare-result.png" alt="Result" class="modal-img">
-                    <img src="grapecare-roc.png" alt="ROC" class="modal-img">
-                    <img src="grapecare-plots.png" alt="Plots" class="modal-img">
-                    <img src="grapecare-matrix.png" alt="Matrix" class="modal-img">
-                    <img src="grapecare-gradcam.png" alt="GradCAM" class="modal-img">
-                </div>
-                <div class="modal-info">
-                    <h2>PhytoDetect AI</h2>
-                    <p class="role-badge">Role: Model Integration & Backend Dev</p>
-                    <p class="modal-desc">
-                        Developed a deep learning-based grape plant disease detection system using CNNs. 
-                        Integrated a multilingual NLP chatbot and deployed using Flask.
-                    </p>
-                    <div class="tech-used">
-                        <h4>Tech Stack:</h4>
-                        <div class="stack"><span>Python</span><span>Flask</span><span>TensorFlow</span><span>HTML/CSS</span></div>
-                    </div>
-                    <a href="https://github.com/gaganngowdaa08/grapecare-v2" target="_blank" class="btn-primary"><i class="fab fa-github"></i> View Source Code</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section id="skills" class="section wrap">
+      <div class="section-heading reveal"><p class="mono section-kicker">04 / TOOLKIT</p><h2>Tools I work with.</h2><p class="section-intro">The technologies I’ve been using to learn, build, and solve problems.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span class="skill-icon"><i class="fa-brands fa-java"></i></span><h3>Backend &amp; Languages</h3><div class="chip-row"><span>Java</span><span>Python</span><span>OOP</span><span>JDBC</span><span>REST APIs</span><span>Spring Boot</span></div></article>
+        <article class="skill-card reveal"><span class="skill-icon"><i class="fa-solid fa-database"></i></span><h3>Data &amp; Storage</h3><div class="chip-row"><span>MySQL</span><span>SQL</span><span>PostgreSQL</span></div></article>
+        <article class="skill-card reveal"><span class="skill-icon"><i class="fa-solid fa-laptop-code"></i></span><h3>Web Development</h3><div class="chip-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div></article>
+        <article class="skill-card reveal"><span class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span><h3>Tools &amp; Platforms</h3><div class="chip-row"><span>Git</span><span>GitHub</span><span>Docker</span><span>Eclipse</span><span>VS Code</span><span>Airflow</span></div></article>
+      </div>
+    </section>
 
-    <div id="modal-stock" class="modal-overlay">
-        <div class="modal-content glass-card">
-            <button class="close-btn" onclick="closeModal('modal-stock')">&times;</button>
-            <div class="modal-grid">
-                <div class="modal-img-wrapper">
-                    <img src="airflow-dashboard (1).png" alt="Dashboard" class="modal-img">
-                    <img src="airflow-dag-graph (1).png" alt="DAG Graph" class="modal-img">
-                </div>
-                <div class="modal-info">
-                    <h2>Stock Data Pipeline</h2>
-                    <p class="role-badge">Role: DAG Development & Dockerization</p>
-                    <p class="modal-desc">
-                        Built a containerized ETL pipeline using Apache Airflow to fetch Alpha Vantage data and store it in PostgreSQL.
-                    </p>
-                    <div class="tech-used">
-                        <h4>Tech Stack:</h4>
-                        <div class="stack"><span>Docker</span><span>Airflow</span><span>PostgreSQL</span><span>Python</span></div>
-                    </div>
-                    <a href="https://github.com/gaganngowdaa08/docker-airflow-stock-pipeline" target="_blank" class="btn-primary"><i class="fab fa-github"></i> View Source Code</a>
-                </div>
-            </div>
+    <section id="education" class="section education-section">
+      <div class="wrap">
+        <div class="section-heading reveal"><p class="mono section-kicker">05 / THE FOUNDATION</p><h2>Education &amp; experience.</h2></div>
+        <div class="journey">
+          <article class="journey-item reveal"><div class="journey-date mono">2026</div><div class="journey-marker"></div><div class="journey-content"><span class="journey-label">EDUCATION</span><h3>K S Institute of Technology</h3><p>B.E. — Computer Science &amp; Engineering</p><span class="journey-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span></div></article>
+          <article class="journey-item reveal"><div class="journey-date mono">INTERNSHIP</div><div class="journey-marker"></div><div class="journey-content"><span class="journey-label">TRAINING &amp; PROJECT WORK</span><h3>Java Full Stack Internship</h3><p>Genesis Training · Worked on the Placement Automation Tool (PAT) as part of full-stack development training.</p><span class="journey-location"><i class="fa-solid fa-code"></i> Java · Spring Boot · React · MySQL</span></div></article>
+          <article class="journey-item reveal"><div class="journey-date mono">2022</div><div class="journey-marker"></div><div class="journey-content"><span class="journey-label">EDUCATION</span><h3>Sri Chaitanya PU College</h3><p>Pre-University Course</p><span class="journey-location"><i class="fa-solid fa-location-dot"></i> Karnataka, India</span></div></article>
+          <article class="journey-item reveal"><div class="journey-date mono">2020</div><div class="journey-marker"></div><div class="journey-content"><span class="journey-label">EDUCATION</span><h3>Sri Chaitanya Techno School</h3><p>Secondary School</p><span class="journey-location"><i class="fa-solid fa-location-dot"></i> Karnataka, India</span></div></article>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <div id="modal-sorting" class="modal-overlay">
-        <div class="modal-content glass-card">
-            <button class="close-btn" onclick="closeModal('modal-sorting')">&times;</button>
-            <div class="modal-grid">
-                <div class="modal-img-wrapper">
-                    <img src="img1.png" alt="View 1" class="modal-img">
-                    <img src="img2.png" alt="View 2" class="modal-img">
-                    <img src="img3.png" alt="View 3" class="modal-img">
-                </div>
-                <div class="modal-info">
-                    <h2>Object Sorting System</h2>
-                    <p class="role-badge">Role: Hardware Integration & Image Processing</p>
-                    <p class="modal-desc">
-                        Automated color sorting system using Arduino for servo control and Python OpenCV for real-time detection.
-                    </p>
-                    <div class="tech-used">
-                        <h4>Tech Stack:</h4>
-                        <div class="stack"><span>OpenCV</span><span>Arduino</span><span>Python</span></div>
-                    </div>
-                    <a href="https://github.com/gaganngowdaa08" target="_blank" class="btn-primary"><i class="fab fa-github"></i> View Source Code</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section id="contact" class="section wrap contact-section">
+      <div class="contact-panel reveal"><div><p class="mono section-kicker">06 / HAVE AN OPPORTUNITY?</p><h2>Let’s build<br><span class="muted-heading">something useful.</span></h2><p class="contact-copy">I’m open to entry-level software development roles where I can contribute, keep learning, and grow with a team.</p><a class="button button-primary" href="mailto:gaganngowdaa08@gmail.com">Get in touch <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="contact-details"><span class="mono">CONTACT DETAILS</span><a href="mailto:gaganngowdaa08@gmail.com"><i class="fa-regular fa-envelope"></i> gaganngowdaa08@gmail.com</a><a href="https://www.linkedin.com/in/gagan-gowda-1b63a22b4/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn profile</a><a href="https://github.com/gaganngowdaa08" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub profile</a><span class="availability"><span class="status-dot"></span> Open to opportunities</span></div></div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer class="footer wrap"><a class="brand" href="#home"><span class="brand-mark">G</span><span>gagan<span class="brand-muted">.dev</span></span></a><p>Designed with intention. Built with curiosity.</p><a href="#home" class="back-top">BACK TO TOP ↑</a><span class="footer-copy">© <span id="year"></span> Gagan Gowda B G</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
