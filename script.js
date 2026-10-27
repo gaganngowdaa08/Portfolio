@@ -66,43 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {\n  document.documentElemen
   }
 
 
-  // Submit the contact form through FormSubmit and show clear delivery feedback.
-  // Use the contact endpoint that worked on the previous portfolio.
-  const contactForm = document.getElementById("contact-message");
-  const contactStatus = document.getElementById("contact-status");
-  const contactButton = contactForm?.querySelector('button[type="submit"]');
-  if (contactForm) {
-    contactForm.addEventListener("submit", async event => {
-      event.preventDefault();
-      if (!contactForm.reportValidity()) return;
-      const formData = new FormData(contactForm);
-      if (contactStatus) contactStatus.textContent = "Sending your message…";
-      if (contactButton) {
-        contactButton.disabled = true;
-        contactButton.setAttribute("aria-busy", "true");
-      }
-      try {
-        const response = await fetch("https://formspree.io/f/mdeeeewo", {
-          method: "POST",
-          body: formData,
-          headers: { "Accept": "application/json" }
-        });
-        const result = await response.json();
-        if (!response.ok || result.errors) {
-          throw new Error(result.errors?.map(item => item.message).join(", ") || "Message submission failed");
-        }
-        contactForm.reset();
-        if (contactStatus) contactStatus.textContent = "Thanks! Your message has been sent successfully.";
-      } catch (error) {
-        if (contactStatus) contactStatus.textContent = "Sorry, your message could not be sent. Please email gagangowdabg08@gmail.com directly or try again.";
-      } finally {
-        if (contactButton) {
-          contactButton.disabled = false;
-          contactButton.removeAttribute("aria-busy");
-        }
-      }
-    });
-  }
+  // The contact form uses native HTML POST to Formspree (configured in index.html).
 
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
