@@ -61,8 +61,8 @@ button{font:inherit}
 /* Project dashboard illustrations */
 .project-art{display:flex;align-items:center;justify-content:center;padding:24px;isolation:isolate;overflow:hidden}
 .project-art:before,.project-art:after{content:"";position:absolute;border-radius:50%;filter:blur(30px);z-index:-1}
-.art-employee{background:radial-gradient(ellipse at 15% 10%,rgba(169,240,107,.18),transparent 48%),#101820}
-.art-employee:before{width:180px;height:180px;right:-45px;bottom:-55px;background:rgba(169,240,107,.11)}
+.art-inventory{background:radial-gradient(ellipse at 15% 10%,rgba(79,190,255,.20),transparent 48%),#101820}
+.art-inventory:before{width:180px;height:180px;right:-45px;bottom:-55px;background:rgba(79,190,255,.13)}
 .art-pat{background:radial-gradient(ellipse at 88% 12%,rgba(108,157,242,.2),transparent 45%),#111725}
 .art-pat:before{width:200px;height:200px;left:-80px;bottom:-95px;background:rgba(107,146,244,.13)}
 .mock-window{width:100%;max-width:560px;border:1px solid rgba(218,230,250,.2);border-radius:9px;overflow:hidden;background:#0c1118;box-shadow:0 22px 55px rgba(0,0,0,.35);transform:rotate(-1deg)}
